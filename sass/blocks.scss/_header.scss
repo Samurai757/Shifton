@@ -1,0 +1,118 @@
+header {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: #080702;
+    width: 100%;
+}
+
+.header__wrapper {
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1243px;
+    padding: 0 20px 0 0;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 31px;
+}
+
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 31px;
+}
+
+.nav__item {
+    font-family: $font-family-Noto;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.nav__item:hover {
+    outline: 2px solid #fff;
+    outline-offset: 8px;
+    border-radius: 14px;
+}
+
+.btn-nav {
+    background: $btn-register-background;
+    padding: $btn-padding;
+}
+
+.btn-nav:hover {
+    background: $btn-register-hover-background;
+}
+
+.btn-nav:active {
+    background: $btn-register-active-background;
+}
+
+.select-item {
+    background: #000;
+}
+
+.form-select {
+    width: 45px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px;
+    appearance: none;
+    color: $btn-color;
+    border: none;
+    background: transparent url(/img/RUS.svg) no-repeat calc(100% - 0px);
+}
+
+.form-select:hover,
+.form-select:focus,
+.form-select:active {
+    background-color: #333;
+    outline: 2px solid $btn-color;
+    outline-offset: 5px;
+    border-radius: 14px;
+}
+
+
+
+
+@media (max-width: 1250px) {
+    .header {
+        position: fixed;
+        z-index: 5;
+    }
+    .header__wrapper {
+        align-items: center;
+        padding: 0 70px 0 20px;
+    }
+
+    .nav__list,
+    .nav__item,
+    .btn-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 780px) {
+    .header__wrapper {
+        height: 47px;
+        padding: 9px 70px 8px 20px;
+    }
+
+    .header__logo img {
+        content: url("/img/mobile-лого.png");
+    }
+}
+

@@ -1,0 +1,48 @@
+.video-section {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-bottom: clamp(44px, 14.78px + 6.09vw, 100px);
+}
+
+.video-section__wrapper {
+    width: 100%;
+    max-width: clamp(329px, -21.09px + 72.93vw, 1000px);
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Обертка для видео с соотношением сторон 16:9 */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+/* Сам iframe занимает всю площадь обертки */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-section__text {
+    font-family: $font-family-Roboto;
+    font-weight: 500;
+    font-size: clamp(28px, 23.83px + 0.87vw, 36px);
+    max-width: clamp(335px, 198.83px + 28.37vw, 596px);
+    margin: 0 auto;
+    margin-bottom: clamp(32px, 22.61px + 1.96vw, 50px);
+}
+
+@media (max-width: 780px) {
+    .video-section__text {
+        font-weight: 400;
+        text-align: center;
+    }
+}

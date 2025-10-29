@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="#" class="header__logo">
+                <img src="./img/headerLogo.png" alt="Логотип">
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__item" id="top">главная</a>
+                    </li>
+                    <li><a href="#" class="nav__item">тарифы</a></li>
+                    <li><a href="#" class="nav__item">возможности</a></li>
+                    <li><a href="#" class="nav__item">блог</a></li>
+                    <li><a href="#" class="nav__item">чаво</a></li>
+                    <li><a href="#" class="nav__item">вход</a></li>
+                </ul>
+                <button class="btn-nav">Регистрация</button>
+                <div class="select-item">
+                    <select class="form-select">
+                        <option value="ru">РУС</option>
+                        <option value="en">АНГ</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+        <input class="none" type="checkbox" id="menu-toggle"
+            aria-label="Переключить меню">
+
+        <!-- меню -->
+        <div class="menu" role="navigation" aria-label="Главное меню">
+            <nav>
+                <a href="index.html" tabindex="0">главная</a>
+                <a href="#" tabindex="0">тарифы</a>
+                <a href="#" tabindex="0">возможности</a>
+                <a href="#" tabindex="0">блог</a>
+                <a href="#" tabindex="0">чаво</a>
+                <a href="#" tabindex="0">вход</a>
+                <button class="btn-nav mobile-menu">Регистрация</button>
+            </nav>
+        </div>
+
+        <!-- Кнопка меню (бургер) -->
+        <label for="menu-toggle" class="menu-btn" aria-label="Открыть меню"
+            tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </header>
+    <main class="main">
+        <section class="main-top">
+            <div class="container-lg ">
+                <div class="container-lg__content">
+                    <h1>Автоматизированное составление рабочих расписаний онлайн
+                    </h1>
+                    <div class="container-lg__text">
+                        <p>Экономия времени и денег</p>
+                        <p>Грамотное распределение рабочей нагрузки</p>
+                        <p>Построение оптимального сменного рабочего расписания
+                            для
+                            любого количества сотрудников</p>
+                    </div>
+                    <button class="free-trial">Попробовать бесплатно</button>
+                </div>
+            </div>
+        </section>
+        <section class="shifton-overview">
+            <div class="container">
+                <h2 class="shifton-overview__text">Возможности Shifton</h2>
+                <div class="cards">
+                    <div class="card card--distribute">
+                        <div class="card__icon card__icon--distribute"></div>
+                        <h3>Распределяй работу</h3>
+                        <h4>Планирование смен</h4>
+                        <ul class="card__list">
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span> Настраиваемые шаблоны смен
+                            </li>
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span>Обмен сменами между
+                                сотрудниками</li>
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span>Праздничные и особые дни</li>
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span>Свободные смены</li>
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span>Соблюдение трудового
+                                законодательства</li>
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span>Синхронизация с календарем</li>
+                        </ul>
+                        <button class="card__button">Подробнее</button>
+                    </div>
+                    <div class="card card--manage-control">
+                        <div class="card__icon card__icon--manage-control">
+                        </div>
+                        <h3>Управляй и контролируй</h3>
+                        <h4>Контроль сотрудников</h4>
+                        <ul class="card__list">
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span> Назначение задач</li>
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span>Создание контрольных списков
+                            </li>
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span>Отслеживание опозданий</li>
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span>Сравнение запланированных и
+                                завершенных задач</li>
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span>Отчеты об отработанных часах,
+                                зарплатах сотрудников и отпускным/больничным
+                                дням</li>
+                        </ul>
+                        <button class="card__button">Подробнее</button>
+                    </div>
+                    <div class="card card--scale">
+                        <div class="card__icon card__icon--scale"></div>
+                        <h3>Масштабируй</h3>
+                        <h4 class="card__text--scale">Интеграции и
+                            неограниченный доступ</h4>
+                        <ul class="card__list card__list--scale">
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span> Возможность интеграции</li>
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span>Доступ 24/7 с любого устройства
+                                с выходом в Интернет</li>
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span>Система уведомлений</li>
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span>Универсальность</li>
+                        </ul>
+                        <button class="card__button">Подробнее</button>
+                    </div>
+                    <div class="card card--plan-forecast">
+                        <div class="card__icon card__icon--plan-forecast"></div>
+                        <h3 class="card__text--plan-forecast">Планируй и
+                            составляй прогнозы</h3>
+                        <h4>Оценки и прогнозы</h4>
+                        <ul class="card__list card__list--plan-forecast">
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span> Планирование перерывов</li>
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span>Планирование отпусков</li>
+                            <li class="card__item"><span
+                                    class="card__item_span"><svg width="8"
+                                        height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="2"
+                                            stroke="#29AAE3" stroke-width="4" />
+                                    </svg></span>Безопасное хранение документов
+                            </li>
+                        </ul>
+                        <button class="card__button">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="auto-schedule">
+            <div class="container container__auto-schedule">
+                <h2 class="auto-schedule__text">Автоматизированное создание
+                    онлайн
+                    расписаний
+                </h2>
+                <div class="auto-schedule__content">
+                    <div class="auto-schedule__content--solutions">
+                        <div class="auto-schedule__content--wrapper">
+                            <p class="section__text">Онлайн-система Shifton
+                                разработана для оптимизации времени и ресурсов в
+                                создании
+                                рабочих расписаний сотрудников. Shifton -
+                                прекрасное решение для компаний любых
+                                сфер деятельности и размеров.</p>
+                            <button
+                                class="auto-schedule__button">Зарегистирироваться</button>
+                        </div>
+                    </div>
+                    <div class="auto-schedule__content--img">
+                        <img class="auto-schedule__img"
+                            src="/img/auto-schedule/iMac.png" alt="">
+                        <svg class="background-svg" width="604" height="279"
+                            viewBox="0 0 604 279" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4"
+                                d="M10.6548 154.266C46.8453 75 160.087 31.6488 289.986 11.0846C415.746 -8.82436 565.873 -9.12259 602.222 71.9518C611.432 130.127 544.428 222.308 351.523 258.681C83.3523 309.245 -38.4483 261.813 10.6548 154.266Z"
+                                fill="#29AAE3" />
+                        </svg>
+                        <img class="auto-schedule__img--mobile"
+                            src="/img/auto-schedule/iMac-mobile.png" alt="">
+                        <svg class="background-svg--mobile" width="238"
+                            height="110" viewBox="0 0 238 110" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4"
+                                d="M4.19093 60.6751C18.4253 29.4987 62.965 12.448 114.056 4.35974C163.52 -3.47078 222.567 -3.58808 236.864 28.2998C240.487 51.181 214.133 87.4374 138.26 101.743C32.7841 121.631 -15.1221 102.975 4.19093 60.6751Z"
+                                fill="#29AAE3" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="teamwork">
+            <div class="container container__teamwork ">
+                <h2 class="container__text">Оптимизация командной работы</h2>
+                <div class="teamwork__wrapper">
+                    <div class="teamwork__img">
+                        <img class="teamwork__img--desktop"
+                            src="/img/teamwork/teamwork.png" alt="">
+                        <svg class="teamwork__vector" width="714" height="165"
+                            viewBox="0 0 714 165" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4"
+                                d="M-9.43913e-05 108.103C0.0446385 147.111 227.353 164.442 383.997 164.262C535.651 164.088 713.186 134.817 713.142 95.8086C713.097 56.8001 539.974 -0.179202 383.329 0.00042968C226.684 0.180061 -0.0448273 69.094 -9.43913e-05 108.103Z"
+                                fill="#9033F9" />
+                        </svg>
+                        <img class="teamwork__img--mobile"
+                            src="/img/teamwork/teamwork-mobile.png" alt="">
+                        <svg class="teamwork__vector--mobile" width="259"
+                            height="60" viewBox="0 0 259 60" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4"
+                                d="M-6.32923e-06 39.1529C0.0161952 53.2811 82.3434 59.558 139.077 59.493C194.004 59.43 258.304 48.8285 258.288 34.7002C258.272 20.572 195.57 -0.0649644 138.835 9.51511e-05C82.1014 0.0651547 -0.0162079 25.0246 -6.32923e-06 39.1529Z"
+                                fill="#9033F9" />
+                        </svg>
+                    </div>
+                    <div class="teamwork__content">
+                        <p class="section__text">Shifton поможет компании
+                            сэкономить средства, минимизировав время простоев в
+                            работе. Система автоматически назначает смены
+                            сотрудникам, обеспечивая плавный и
+                            бесперебойный рабочий процесс на предприятии.</p>
+                        <button class="teamwork__button">Начать работу</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="planning">
+            <div class="container container__planning">
+                <h2 class="planning__text">Управление сменами и перерывами
+                </h2>
+                <div class="planning__wrapper">
+                    <div class="planning__wrapper--content">
+                        <p class="section__text">Создавайте комфортные рабочие
+                            графики с учетом личных обстоятельств сотрудников.
+                            Работники оценят возможность обмениваться сменами
+                            или перерывами с коллегами, а
+                            в случае замены сотрудника Shifton мгновенно
+                            скорректирует любой график.</p>
+                        <button class="planning__button">Попробовать
+                            бесплатно</button>
+                    </div>
+                    <div class="planning__img">
+                        <div class="planning__img--top"></div>
+                        <div class="planning__img--second"></div>
+                        <img class="planning__img--desctop"
+                            src="/img/planning/Iphone1.png" alt="">
+                        <div class="planning__img--top--modile"></div>
+                        <div class="planning__img--second--modile"></div>
+                        <img class="planning__img--mobile"
+                            src="/img/planning/Iphone-mobile1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video-section">
+            <div class="video-section__wrapper">
+                <h2 class="video-section__text">Shifton - автоматизированный
+                    сервис планирования расписаний</h2>
+                <div class="video-container">
+                    <iframe
+                        src="https://rutube.ru/play/embed/b5c22805cfcc469584c62b4a2276be94/"
+                        allow="clipboard-write; autoplay"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <div class="contact">
+            <div class="container-small">
+                <div class="contact__text">
+                    <p>Остались вопросы? С&nbsp;радостью на них ответим!</p>
+                    <p> Пишите в чат или на почту
+                        <a class="contact__link"
+                            href="mailto:support@shifton.com"
+                            title="Отправить письмо">support@shifton.com</a>
+                    </p>
+                </div>
+                <div class="contact__social">
+                    <a href="#"><img src="/img/contact/Twitter.svg"
+                            alt="Иконка Twitter"></a>
+                    <a href="#"><img src="/img/contact/Linkedin.svg"
+                            alt="Иконка Linkedin"></a>
+                    <a href="#"><img src="/img/contact/Facebook.svg"
+                            alt="Иконка Facebook"></a>
+                    <a href="#"><img src="/img/contact/Youtube.svg"
+                            alt="Иконка Youtube"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__menu">
+            <ul class="footer__menu-list">
+                <li><a href="#" class="footer__menu-item">Возможности</a></li>
+                <li><a href="#" class="footer__menu-item">Блог</a></li>
+                <li><a href="#" class="footer__menu-item">чаво</a></li>
+            </ul>
+        </div>
+        <span class="footer__span"></span>
+        <div class="footer__application">
+            <a class="footer__application-img" href="#"><img
+                    src="/img/footer/google-play-badge.png" alt=""></a>
+            <a class="footer__application-img" href="#"><img
+                    src="/img/footer/app_store.png" alt=""></a>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright--text">Copyright 2017-2021, Shifton. All
+                rights reserved. Privacy Policy | Terms of Use | Сookies</p>
+        </div>
+    </footer>
+</body>
+</html>

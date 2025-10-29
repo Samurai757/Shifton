@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
+
+// font-family: "Noto Sans", sans-serif;
+// font-family: "Roboto", sans-serif;
+
+// Объявляем переменную цвета
+$btn-color: #ffffff;
+$btn-padding: 12px 18px;
+$font-family-Roboto: "Roboto", sans-serif;
+$font-family-Noto: "Noto Sans", sans-serif;
+// Для кнопки "Подробнее"
+$btn-details-padding: 12px 30px;
+$btn-details-background: #54A757;
+$btn-details-hover-background: #4FA152;
+$btn-details-active-background: #0062CC;
+
+// Для кнопки "Зарегистрироваться"
+$btn-register-padding: 12px 49px;
+$btn-register-background: #29AAE3;
+$btn-register-hover-background: #269ACD;
+$btn-register-active-background: #9033F9;
+
+// Для кнопки "Начать работу"
+$btn-start-padding: 12px 50.5px;
+$btn-start-background: #9033F9;
+$btn-start-hover-background: #842EE7;
+$btn-start-active-background: #54A757;
+
+// Для кнопки "Попробовать бесплатно"
+$btn-free-trial-padding: 12px 38px;
+$btn-free-trial-background: #FF5966;
+$btn-free-trial-hover-background: #EB5560;
+$btn-free-trial-active-background: #54A757;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+button {
+    font-family: $font-family-Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    border-radius: 26px;
+    color: $btn-color;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: $btn-color;
+}
+
+.container-lg {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container {
+    width: clamp(331px, -162.04px + 102.72vw, 1276px);
+    margin-inline: auto;
+}
+
+h2 {
+    font-family: $font-family-Roboto;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.section__text {
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    font-family: $font-family-Noto;
+    padding: 0;
+}
+
+@media (max-width: 780px) {
+    h2 {
+        font-weight: 400;
+        font-size: 28px;
+    }
+}

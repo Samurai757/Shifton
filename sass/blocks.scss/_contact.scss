@@ -1,0 +1,39 @@
+.contact {
+    max-width: 1600px;
+    margin-inline: auto;
+    margin-bottom: clamp(44px, 14.78px + 6.09vw, 100px);
+}
+
+.container-small {
+    width: clamp(334px, -467.60px + 167.00vw, 668px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(32px, -12.80px + 9.33vw, 60px);
+}
+
+.contact__text {
+    font-family: $font-family-Roboto;
+    font-weight: 500;
+    font-size: clamp(20px, 5.60px + 3.00vw, 26px);
+    text-align: center;
+    line-height: 1.465;
+}
+
+.contact__link {
+    color: $btn-register-background;
+}
+
+.contact__social {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+@media (max-width: 480px) {
+    .contact__text {
+        padding-inline: 30px;
+    }
+}

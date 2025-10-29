@@ -1,0 +1,130 @@
+.auto-schedule {
+    background: #f5f6f6;
+    max-width: 1600px;
+    height: auto;
+    padding-bottom: 48px;
+    margin-inline: auto;
+    margin-bottom: clamp(44px, 14.78px + 6.09vw, 100px);
+}
+
+.container__auto-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(32px, 27.83px + 0.87vw, 40px);
+}
+
+.auto-schedule__text {
+    display: flex;
+    justify-content: center;
+    padding-top: clamp(21px, -4.57px + 5.33vw, 70px);
+    color: #29AAE3;
+}
+
+.auto-schedule__content {
+    display: flex;
+    justify-content: space-between;
+    // height: 483px;
+    // flex-wrap: wrap;
+    column-gap: 32px;
+}
+
+.auto-schedule__content--solutions {
+    display: flex;
+}
+
+.auto-schedule__content--wrapper {
+    margin-top: clamp(32px, -0.35px + 6.74vw, 94px);
+    margin-left: clamp(21px, 0.65px + 4.24vw, 60px);
+    margin-right: clamp(21px, -30.65px + 10.76vw, 120px);
+    width: clamp(333px, 142.03px + 24.48vw, 475px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 9.57px + 2.17vw, 40px);
+}
+
+.auto-schedule__button {
+    background: $btn-register-background;
+    padding: $btn-register-padding;
+    width: 305px;
+
+    &:hover {
+        background: $btn-register-hover-background;
+    }
+
+    &:active {
+        background: $btn-register-active-background;
+    }
+}
+
+.auto-schedule__content--img {
+    position: relative;
+    display: inline-block;
+    width: 647px;
+    height: 483px;
+}
+
+.auto-schedule__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    left: 88px;
+    width: 479px;
+    height: 395px;
+}
+
+.background-svg {
+    position: absolute;
+    left: 20px;
+    bottom: 48px;
+    z-index: 0;
+}
+
+.auto-schedule__img--mobile,
+.background-svg--mobile {
+    display: none;
+}
+
+@media (max-width: 1360px) {
+    .auto-schedule__content {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .auto-schedule__text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 780px) {
+    .auto-schedule__content--img {
+        width: auto;
+        height: 190px;
+        margin: 0 auto;
+    }
+
+    .auto-schedule__img {
+        display: none;
+    }
+
+    .background-svg {
+        display: none;
+    }
+
+    .auto-schedule__img--mobile {
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+    .background-svg--mobile {
+        display: block;
+        position: absolute;
+        left: -30px;
+        top: 70px;
+        z-index: 0;
+    }
+
+    .auto-schedule__button {
+        width: 335px;
+    }
+}
