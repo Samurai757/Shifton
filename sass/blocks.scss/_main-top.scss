@@ -5,7 +5,7 @@
     height: 722px;
     background-image:
         linear-gradient(124deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.52) 64.21%, rgba(0, 0, 0, 0.52) 100%),
-        url("../../img/main_top/header-img.png");
+        url("./../img/main_top/header-img.png");
     background-size: cover;
     background-position: center;
 }
@@ -56,7 +56,7 @@ h1 {
     .container-lg {
         background-image:
             linear-gradient(124deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.52) 64.21%, rgba(0, 0, 0, 0.52) 100%),
-            url("../../img/main_top/header-img-small.png");
+            url("./../img/main_top/header-img-small.png");
         height: 587px;
     }
 }

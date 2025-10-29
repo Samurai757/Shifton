@@ -73,7 +73,7 @@ header {
     appearance: none;
     color: $btn-color;
     border: none;
-    background: transparent url(/img/RUS.svg) no-repeat calc(100% - 0px);
+    background: transparent url(./../img/RUS.svg) no-repeat calc(100% - 0px);
 }
 
 .form-select:hover,
@@ -112,7 +112,7 @@ header {
     }
 
     .header__logo img {
-        content: url("/img/mobile-лого.png");
+        content: url("./../img/mobile-лого.png");
     }
 }
 

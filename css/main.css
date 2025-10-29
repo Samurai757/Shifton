@@ -130,7 +130,7 @@ header {
           appearance: none;
   color: #ffffff;
   border: none;
-  background: transparent url(/img/RUS.svg) no-repeat calc(100% - 0px);
+  background: transparent url(./../img/RUS.svg) no-repeat calc(100% - 0px);
 }
 
 .form-select:hover,
@@ -163,7 +163,7 @@ header {
     padding: 9px 70px 8px 20px;
   }
   .header__logo img {
-    content: url("/img/mobile-лого.png");
+    content: url("./../img/mobile-лого.png");
   }
 }
 /* Скрываем чекбокс */
@@ -305,7 +305,7 @@ header {
 
 .container-lg {
   height: 722px;
-  background-image: linear-gradient(124deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.52) 64.21%, rgba(0, 0, 0, 0.52) 100%), url("../../img/main_top/header-img.png");
+  background-image: linear-gradient(124deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.52) 64.21%, rgba(0, 0, 0, 0.52) 100%), url("./../img/main_top/header-img.png");
   background-size: cover;
   background-position: center;
 }
@@ -353,7 +353,7 @@ h1 {
 
 @media (max-width: 780px) {
   .container-lg {
-    background-image: linear-gradient(124deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.52) 64.21%, rgba(0, 0, 0, 0.52) 100%), url("../../img/main_top/header-img-small.png");
+    background-image: linear-gradient(124deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.52) 64.21%, rgba(0, 0, 0, 0.52) 100%), url("./../img/main_top/header-img-small.png");
     height: 587px;
   }
 }
@@ -424,7 +424,7 @@ h1 {
 .card__icon--distribute {
   box-shadow: 0 4px 20px 0 rgba(255, 198, 93, 0.3);
   background: #FFC65D;
-  background-image: url(../../img/shifton/Group1.svg);
+  background-image: url(./../img/shifton/Group1.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 53.33px 53.33px;
@@ -433,7 +433,7 @@ h1 {
 .card__icon--manage-control {
   box-shadow: 0 4px 20px 0 rgba(144, 51, 249, 0.2);
   background: #9033f9;
-  background-image: url(../../img/shifton/Group2.svg);
+  background-image: url(./../img/shifton/Group2.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 48.22px 50px;
@@ -442,7 +442,7 @@ h1 {
 .card__icon--scale {
   box-shadow: 0 4px 20px 0 rgba(255, 89, 102, 0.2);
   background: #ff5966;
-  background-image: url(../../img/shifton/Group3.svg);
+  background-image: url(./../img/shifton/Group3.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 53.33px 53.33px;
@@ -451,7 +451,7 @@ h1 {
 .card__icon--plan-forecast {
   box-shadow: 0 4px 20px 0 rgba(41, 170, 227, 0.2);
   background: #29aae3;
-  background-image: url(../../img/shifton/Group4.svg);
+  background-image: url(./../img/shifton/Group4.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 48.22px 50px;
